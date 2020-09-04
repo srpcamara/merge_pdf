@@ -3,7 +3,8 @@ from PyPDF2 import PdfFileMerger
 from datetime import date
 from logger_settings import app_logger
 
-files_path = path.abspath('') + '/files'
+#files_path = path.abspath('') + '/files'
+files_path = 'C:/Users/sergio.camara/Documents/OneDrive/Contas'
 data = date.today()
 
 arquivos = [
@@ -34,5 +35,5 @@ for arquivo in arquivos:
 
         app_logger.info(f"Arquivo gerado: {arquivo_final}")
     else:
-        app_logger.info(f"Boleto ou comprovante não encontrados: {boleto} / {comprovante}")
+        app_logger.info(f"Boleto ou comprovante não encontrados: {boleto} | {comprovante}")
            
