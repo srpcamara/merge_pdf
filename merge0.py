@@ -1,7 +1,8 @@
 from os import path, listdir
 from PyPDF2 import PdfFileMerger
 
-files_path = path.abspath('') + '/files'
+#files_path = path.abspath('') + '/files'
+files_path = 'C:/Users/sergio.camara/Desktop/'
 
 pdfs = [f"{files_path}/{pdf_file}" for pdf_file in listdir(files_path) if pdf_file.endswith('.pdf')]
 
